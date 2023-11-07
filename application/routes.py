@@ -32,7 +32,7 @@ def get_characters():
 @app.route('/characters/<id>', methods=['GET'])
 def get_character(id):
     character=FriendsCharacter.query.filter_by(id=id).first()
-    return jsonify(id=character.id, name=character.name, age=character.age, catch_phrase=character.catch_phrase).first()
+    return jsonify(id=character.id, name=character.name, age=character.age, catch_phrase=character.catch_phrase)
 
 @app.route('/characters/<id>', methods=['DELETE'])
 def delete_character(id):
