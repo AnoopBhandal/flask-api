@@ -1,0 +1,7 @@
+After initialising everything, run the following inside the shell:
+
+
+1) python -i
+2) from application import db
+3) from application.models import FriendsCharacter
+4) db.create_all()
