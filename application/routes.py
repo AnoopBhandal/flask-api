@@ -4,7 +4,7 @@ from application.models import FriendsCharacter
 
 def format_character(character):
     return {
-        'id': character.id
+        'id': character.id,
         'name': character.name,
         'age': character.age,
         'catch_phrase': character.catch_phrase
